@@ -22,13 +22,18 @@ int main() {
 
   int distance;
   float amount;
-  
+
   printf("Enter distance : ");
   scanf("%d",&distance);
 
   if(distance<=30){
+    amount=50*distance;
+  }
+  else{
+    amount=(50*30)+40*(distance-30);
 
   }
+  printf("Amount is : %.2f",amount);
   
   return 0;
 }
